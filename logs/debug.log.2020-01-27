@@ -1,0 +1,991 @@
+WARNING 2020-01-27 17:28:29,866 log 11585 140013061400320 Not Found: /Search
+ERROR 2020-01-27 18:56:10,609 log 16124 140708180555520 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 1359, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 662, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':articleListView' from 'article:articleListView'
+ERROR 2020-01-27 21:14:37,061 log 22938 140205630183168 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['articlelistview/$']
+ERROR 2020-01-27 21:17:09,446 log 22938 140205630183168 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['articlelistview/$']
+ERROR 2020-01-27 21:17:10,902 log 22938 140205630183168 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['articlelistview/$']
+ERROR 2020-01-27 21:17:41,468 log 23457 140335225022208 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['articlelistview/$']
+ERROR 2020-01-27 21:19:34,780 log 23504 139844016334592 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['categorylistview/$']
+ERROR 2020-01-27 21:21:37,941 log 23504 139844016334592 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['categorylistview/$']
+ERROR 2020-01-27 21:21:39,317 log 23504 139844016334592 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['categorylistview/$']
+ERROR 2020-01-27 21:23:43,589 log 23504 139844016334592 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['categorylistview/$']
+ERROR 2020-01-27 21:26:35,286 log 23504 139844016334592 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articleListView' not found. 'articleListView' is not a valid view function or pattern name.
+ERROR 2020-01-27 21:28:29,884 log 23990 140443664148224 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'articleListView' with arguments '(3,)' not found. 1 pattern(s) tried: ['articlelistview/$']
+ERROR 2020-01-27 21:41:34,946 log 24575 139937080932096 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+ERROR 2020-01-27 21:41:57,267 log 24575 139937080932096 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 188, in render
+    return template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+ERROR 2020-01-27 21:42:11,289 log 24575 139937080932096 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+ERROR 2020-01-27 21:43:57,275 log 24575 139937080932096 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+ERROR 2020-01-27 21:44:56,496 log 24575 139937080932096 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+ERROR 2020-01-27 21:47:34,049 log 24575 139937080932096 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+WARNING 2020-01-27 21:47:34,423 log 24575 139937080932096 Not Found: /favicon.ico
+ERROR 2020-01-27 21:47:36,920 log 24575 139937080932096 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+WARNING 2020-01-27 22:08:00,683 log 26250 140509532223232 Not Found: /about/
+WARNING 2020-01-27 22:09:46,554 log 26250 140509532223232 Not Found: /about/
+WARNING 2020-01-27 22:09:47,674 log 26250 140509532223232 Not Found: /about/
+WARNING 2020-01-27 22:09:48,348 log 26250 140509532223232 Not Found: /about/
+WARNING 2020-01-27 22:09:59,271 log 26364 139902561072896 Not Found: /about/
+WARNING 2020-01-27 22:11:36,004 log 26463 139854785918720 Not Found: /about/
+WARNING 2020-01-27 22:11:36,784 log 26463 139854785918720 Not Found: /about/
+ERROR 2020-01-27 22:29:30,992 log 27521 140308543858432 Internal Server Error: /userprofile/userlogout/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/userprofile/views.py", line 32, in userLogout
+    return redirect('article:homeListView')
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 131, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.
+ERROR 2020-01-27 22:32:00,455 log 27645 140366359549696 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/userprofile/views.py", line 17, in userLogin
+    return redirect('article:homeListView')
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 131, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'homeListView' not found. 'homeListView' is not a valid view function or pattern name.

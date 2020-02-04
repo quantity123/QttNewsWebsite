@@ -1,0 +1,38 @@
+{% load static %}
+{% if is_paginated %}
+<div class="pagination-simple" align="center" style="margin-left:-290px">
+    {% if page_obj.has_previous %}
+        {% if order == 'hot_order' %}
+            {% if filterType == 1 %}
+                <a href="?page={{ page_obj.previous_page_number }}&searchText={{ searchText }}&order=hot_order">上一页</a>
+            {% else %}
+                <a href="?page={{ page_obj.previous_page_number }}&order=hot_order">上一页</a>
+            {% endif %}
+        {% else %}
+            {% if filterType == 1 %}
+                <a href="?page={{ page_obj.previous_page_number }}&searchText={{ searchText }}">上一页</a>
+            {% else %}
+                <a href="?page={{ page_obj.previous_page_number }}">上一页</a>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+    <span class="current">第 {{ page_obj.number }} 页 / 共 {{ paginator.num_pages }} 页</span>
+    {% if page_obj.has_next %}
+        {% if order == 'hot_order' %}
+            {% if filterType == 1 %}
+                <a href="?page={{ page_obj.next_page_number }}&searchText={{ searchText }}&order=hot_order">下一页</a>
+            {% else %}
+                <a href="?page={{ page_obj.next_page_number }}&order=hot_order">下一页</a>
+            {% endif %}
+        {% else %}
+            {% if filterType == 1 %}
+                <a href="?page={{ page_obj.next_page_number }}&searchText={{ searchText }}">下一页</a>
+            {% else %}
+                <a href="?page={{ page_obj.next_page_number }}">下一页</a>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+    <!--跳至<input type="text" style="width:5em;">页<a href="#">GO</a>-->
+</div>
+<br>
+{% endif %}

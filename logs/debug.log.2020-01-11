@@ -1,0 +1,119 @@
+ERROR 2020-01-11 01:54:56,245 log 25112 140235079304960 Internal Server Error: /articlelistview/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 533, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'media'. Did you forget to register or load this tag?
+WARNING 2020-01-11 01:54:57,598 log 25112 140235079304960 Not Found: /favicon.ico
+ERROR 2020-01-11 01:55:59,922 log 25112 140235079304960 Internal Server Error: /articlelistview/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 1021, in find_library
+    return parser.libraries[name]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 1078, in load
+    lib = find_library(parser, name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 1025, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+WARNING 2020-01-11 02:00:10,320 log 25112 140235079304960 Not Found: /articlelistview/images//201610181557196870.jpg
+WARNING 2020-01-11 02:00:10,321 log 25112 140234834568960 Not Found: /articlelistview/images//201610241227558789.jpg
+WARNING 2020-01-11 02:00:10,344 log 25112 140234834568960 Not Found: /articlelistview/images/201610181739277776.jpg
+WARNING 2020-01-11 02:00:10,360 log 25112 140235079304960 Not Found: /articlelistview/images//201610241224221511.jpg
+WARNING 2020-01-11 02:00:13,608 log 25112 140235079304960 Not Found: /articlelistview/images/loading.gif
+WARNING 2020-01-11 02:00:13,655 log 25112 140235079304960 Not Found: /articlelistview/
+WARNING 2020-01-11 02:00:13,994 log 25112 140235079304960 Not Found: /articlelistview/images/201610181739277776.jpg
+WARNING 2020-01-11 02:00:22,219 log 25112 140235079304960 Not Found: /articlelistview/base.html
+WARNING 2020-01-11 02:00:25,152 log 25112 140235079304960 Not Found: /articlelistview/base.html

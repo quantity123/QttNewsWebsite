@@ -1,0 +1,471 @@
+ERROR 2020-01-31 01:34:57,495 log 28106 139691955676928 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: '='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 951, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 884, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 887, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 662, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=' from '='
+ERROR 2020-01-31 01:40:33,379 log 28106 139691955676928 Internal Server Error: /categoryarticlelist/1
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryArticleList' with no arguments not found. 1 pattern(s) tried: ['categoryarticlelist/(?P<pk>[0-9]+)$']
+ERROR 2020-01-31 01:43:14,523 log 28106 139691955676928 Internal Server Error: /categoryarticlelist/1
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'categoryArticleList' with arguments '('',)' not found. 1 pattern(s) tried: ['categoryarticlelist/(?P<pk>[0-9]+)$']
+WARNING 2020-01-31 03:43:06,489 log 1852 140190243329792 Not Found: /categoryarticlelist/1
+ERROR 2020-01-31 18:00:08,336 log 13804 139669269292800 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 1359, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 662, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''article:searchArticleList' from ''article:searchArticleList'
+ERROR 2020-01-31 18:03:23,582 log 13804 139669269292800 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+ERROR 2020-01-31 18:03:50,115 log 13804 139669269292800 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+ERROR 2020-01-31 18:04:44,447 log 13804 139669269292800 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+ERROR 2020-01-31 18:07:31,897 log 14238 139924598683392 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+ERROR 2020-01-31 18:07:45,006 log 14238 139924598683392 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+ERROR 2020-01-31 18:09:47,281 log 14238 139924598683392 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+WARNING 2020-01-31 18:10:13,157 log 14238 139924598683392 Not Found: /searcharticlelist/
+ERROR 2020-01-31 18:16:29,848 log 14238 139924598683392 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+ERROR 2020-01-31 18:35:48,977 log 15365 139824905160448 Internal Server Error: /searcharticlelist/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/article/views.py", line 87, in get_queryset
+    return super(SearchArticleList, self).get_queryset().filter(Q(title__icontains=self.searchText)|Q(body__icontains=self.searchText))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1363, in _add_q
+    check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1301, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1160, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value

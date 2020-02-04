@@ -1,0 +1,76 @@
+{% load static %}
+<aside class="sidebar">
+    {% if articleDetail %}
+    <div class="fixed" style="margin-top:110px">
+    {% else %}
+    <div class="fixed" style="margin-top:56px">
+    {% endif %}
+        <div class="widget widget-search">
+            <form class="navbar-form" action="{% url 'article:searchArticleList' %}" method="GET">
+                <div class="input-group">
+                    <input type="search" name="searchText" class="form-control" size="35" placeholder="搜索新闻标题与内容关键字" maxlength="15" autocomplete="off" required>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default btn-search" type="submit">搜索</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+        <div class="widget widget-category">
+            <h3 class="widget-title">分类</h3>
+            <ul>
+                {% for category in categoryList %}
+                <li class="list-group-item">
+                    <a href="{% url 'article:categoryArticleList' category.pk %}">{{ category }}</a>
+                </li>
+                {% empty %}
+                    无分类
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="widget widget-tag-cloud">
+            <h3 class="widget-title">标签云</h3>
+            <div class="article-tags">
+                {% for tag in tagList %}
+                <a href="{% url 'article:tagArticleList' tag.pk %}">{{ tag }}</a>
+                {% empty %}
+                    无标签
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="widget widget_sentence">
+            <h3 class="widget-title">友情链接</h3>
+            <p class="widget-sentence-link">
+                <a href="https://github.com/quantity123" title="我的Github" target="_blank">我的Github</a>
+            </p>
+        </div>
+    </div>
+
+    <!--
+    广告图片
+    <div class="widget widget_sentence">
+        <a href="#" target="_blank" rel="nofollow" title="图片广告" ><img style="width: 100%" src="images/201610241224221511.jpg" alt="图片广告"></a>
+    </div>
+    -->
+
+    <!--
+    随机推荐
+    <div class="relates">
+        <div class="title">
+            <h3>随机推荐</h3>
+        </div>
+        <ul>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+            <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+        </ul>
+    </div>
+    -->
+</aside>

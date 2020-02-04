@@ -1,0 +1,1185 @@
+WARNING 2020-02-03 00:45:53,575 base 6270 140168624445184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:45:53,576 log 6270 140168624445184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:32,411 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:32,411 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:33,961 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:33,961 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:34,780 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:34,780 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:35,411 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:35,411 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:35,925 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:35,926 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:36,449 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:36,449 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:36,888 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:36,888 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:37,302 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:37,302 log 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:37,670 base 6408 140373401917184 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:47:37,670 log 6408 140373401917184 Gone: /userprofile/userlogin/
+ERROR 2020-02-03 00:48:50,260 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:48:51,773 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:48:53,167 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:48:54,409 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:48:55,564 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:48:59,755 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:00,820 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:01,652 log 6496 140551445751552 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:21,124 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:22,231 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:23,263 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:24,277 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:25,169 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:25,985 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:26,699 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:27,431 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:28,119 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:29,159 log 6559 140503824951040 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:48,473 log 6605 140278958360320 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:49,451 log 6605 140278958360320 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:50,659 log 6605 140278958360320 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:51,535 log 6605 140278958360320 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:52,375 log 6605 140278958360320 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:49:53,229 log 6605 140278958360320 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:50:17,038 log 6639 140233694246656 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:50:17,989 log 6639 140233694246656 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:50:18,999 log 6639 140233694246656 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:50:39,134 log 6687 140459064891136 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:50:40,182 log 6687 140459064891136 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:50:41,131 log 6687 140459064891136 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:51:07,495 log 6703 139734412162816 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:51:08,666 log 6703 139734412162816 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 00:51:09,555 log 6703 139734412162816 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 158, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+WARNING 2020-02-03 00:51:36,541 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:36,542 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:37,608 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:37,608 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:38,426 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:38,426 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:39,078 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:39,078 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:39,706 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:39,706 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:40,303 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:40,304 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:40,875 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:40,876 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:41,382 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:41,383 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:41,855 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:41,856 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:42,327 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:42,327 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:42,785 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:42,786 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:43,171 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:43,171 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:44,044 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:44,044 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:44,657 base 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:44,657 log 6770 139748303697664 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:55,940 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:55,949 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:56,679 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:56,679 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:57,240 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:57,240 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:57,551 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:57,552 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:57,795 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:57,795 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,080 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,080 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,380 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,380 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,660 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,661 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,997 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:58,998 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,258 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,258 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,477 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,477 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,637 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,637 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,819 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,820 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,927 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:51:59,927 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,049 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,049 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,421 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,422 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,591 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,591 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,752 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,752 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,916 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:00,916 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,042 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,043 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,151 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,151 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,283 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,283 log 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,424 base 6781 140258800826112 Gone: /userprofile/userlogin/
+WARNING 2020-02-03 00:52:01,424 log 6781 140258800826112 Gone: /userprofile/userlogin/
+ERROR 2020-02-03 01:04:54,719 log 7031 140284425398016 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'userLogin' with arguments '('',)' not found. 1 pattern(s) tried: ['userprofile/userlogin/$']
+ERROR 2020-02-03 01:04:57,460 log 7031 140284425398016 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'userLogin' with arguments '('',)' not found. 1 pattern(s) tried: ['userprofile/userlogin/$']
+ERROR 2020-02-03 01:04:59,180 log 7031 140284425398016 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'userLogin' with arguments '('',)' not found. 1 pattern(s) tried: ['userprofile/userlogin/$']
+ERROR 2020-02-03 01:10:35,286 log 7827 139917592385280 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 59, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/context.py", line 270, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than HttpResponseRedirect.
+ERROR 2020-02-03 01:12:51,006 log 7967 139653729654528 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 59, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/context.py", line 270, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than HttpResponse.
+ERROR 2020-02-03 01:20:08,724 log 8420 140702343194368 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 65, in view
+    self.setup(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/userprofile/views.py", line 36, in setup
+    if self.request.method == 'POST':
+AttributeError: 'Login' object has no attribute 'request'
+ERROR 2020-02-03 01:27:23,835 log 8933 140065916315392 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view userprofile.views.Login didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-02-03 01:28:39,539 log 8988 139732216252160 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2020-02-03 01:32:31,215 log 9198 139735477249792 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view userprofile.views.Login didn't return an HttpResponse object. It returned None instead.
+WARNING 2020-02-03 01:33:52,921 base 9311 140438760752896 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:33:52,922 log 9311 140438760752896 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:33:58,831 base 9311 140438760752896 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:33:58,831 log 9311 140438760752896 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:34:00,642 base 9311 140438760752896 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:34:00,644 log 9311 140438760752896 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:34:02,466 base 9311 140438760752896 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:34:02,466 log 9311 140438760752896 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:34:05,073 base 9311 140438760752896 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:34:05,074 log 9311 140438760752896 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:34:28,500 base 9311 140438760752896 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:34:28,502 log 9311 140438760752896 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:34:52,018 base 9394 140610546288384 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:34:52,019 log 9394 140610546288384 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:35:09,621 base 9439 140580669482752 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:35:09,621 log 9439 140580669482752 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:35:25,536 base 9439 140580669482752 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:35:25,536 log 9439 140580669482752 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:35:29,761 base 9439 140580669482752 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:35:29,761 log 9439 140580669482752 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:35:31,587 base 9439 140580669482752 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:35:31,587 log 9439 140580669482752 Method Not Allowed: /userprofile/userlogin/
+ERROR 2020-02-03 01:37:08,540 log 9571 140617012004608 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 140, in post
+    form = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+ERROR 2020-02-03 01:38:33,624 log 9703 140235215795968 Internal Server Error: /userprofile/userlogin/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 140, in post
+    form = self.get_form()
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: 'NoneType' object is not callable
+WARNING 2020-02-03 01:39:14,151 base 9741 140407505172224 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:39:14,151 log 9741 140407505172224 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:39:55,219 base 9796 140337355282176 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:39:55,219 log 9796 140337355282176 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:39:58,954 base 9796 140337355282176 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:39:58,955 log 9796 140337355282176 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:48:26,586 base 10242 140220132042496 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:48:26,586 log 10242 140220132042496 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:48:50,282 log 10269 140485923186432 Bad Request: /userprofile/userlogin/
+WARNING 2020-02-03 01:51:44,561 base 10442 140166175266560 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:51:44,561 log 10442 140166175266560 Method Not Allowed: /userprofile/userlogin/
+WARNING 2020-02-03 01:51:47,726 base 10442 140166175266560 Method Not Allowed (POST): /userprofile/userlogin/
+WARNING 2020-02-03 01:51:47,726 log 10442 140166175266560 Method Not Allowed: /userprofile/userlogin/
+ERROR 2020-02-03 02:03:22,054 log 11097 140681225717504 Internal Server Error: /userprofile/login/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/userprofile/views.py", line 53, in get
+    return render(self.request, 'userprofile/login.html', context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'userRegister' not found. 'userRegister' is not a valid view function or pattern name.
+ERROR 2020-02-03 02:05:19,072 log 11339 139689014138624 Internal Server Error: /userprofile/login/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/userprofile/views.py", line 53, in get
+    return render(self.request, 'userprofile/login.html', context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'userRegister' not found. 'userRegister' is not a valid view function or pattern name.
+ERROR 2020-02-03 02:05:20,248 log 11339 139689014138624 Internal Server Error: /userprofile/login/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/userprofile/views.py", line 53, in get
+    return render(self.request, 'userprofile/login.html', context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'userRegister' not found. 'userRegister' is not a valid view function or pattern name.
+ERROR 2020-02-03 02:05:26,236 log 11339 139689014138624 Internal Server Error: /userprofile/login/
+Traceback (most recent call last):
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/userprofile/views.py", line 53, in get
+    return render(self.request, 'userprofile/login.html', context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/quantity123/python_work/3example_django/QttNewsWebsite/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'userRegister' not found. 'userRegister' is not a valid view function or pattern name.

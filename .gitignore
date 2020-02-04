@@ -130,5 +130,8 @@ dmypy.json
 
 # pycharm
 .idea/
+
+# django
 QttNewsWebsite/settings.py
-QttNewsWebsite/urls.py
+fs
+db.sqlite3

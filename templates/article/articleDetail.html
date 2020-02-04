@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}新闻详情{% endblock title %}
+{% block content %}
+<section class="container">
+    <div class="content-wrap">
+        <div class="content">
+            <header class="article-header">
+                <h1 class="article-title">
+                    <a href="#" title="{{ articleDetail.title }}">{{ articleDetail.title }}</a>
+                </h1>
+                <div class="article-meta">
+                    <span class="item article-meta-views" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="浏览数">
+                        <i class="glyphicon glyphicon-eye-open"></i> {{ articleDetail.viewCount }}
+                    </span>
+                    <span class="item article-meta-comment" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="评论数">
+                        <i class="glyphicon glyphicon-comment"></i> {{ articleDetail.commentCount }}
+                    </span>
+                    <span class="item article-meta-time">
+                        <time class="time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="首次发表时间">
+                            <i class="glyphicon glyphicon-time"></i> {{ articleDetail.createdTime }}
+                        </time>
+                    </span>
+                    <span class="item article-meta-time">
+                        <time class="time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="最后修改时间">
+                            <i class="glyphicon glyphicon-time"></i> {{ articleDetail.modifiedTime }}
+                        </time>
+                    </span>
+                </div>
+            </header>
+            <article class="article-content">
+                {% if articleDetail.iconograph %}
+                <p><img data-original="{{ articleDetail.iconograph.url }}" src="{{ articleDetail.iconograph.url }}" alt="新闻插图"></p>
+                {% endif %}
+                <p>{{ articleDetail.body }}</p>
+            </article>
+            <hr>
+            {% if user.is_authenticated %}
+            <div class="title" id="comment">
+                <h3>评论</h3>
+            </div>
+            <div id="respond">
+                <form id="comment-form" name="comment-form" action="{% url 'comment:articleComment' articleDetail.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="comment">
+                        <div class="comment-box">
+                            <textarea type="text" class="form-control" style="max-width:808px;min-width:808px;" id="text" name="text" rows="3" placeholder="您的评论或留言(必填)"></textarea>
+                            <div class="comment-ctrl">
+                                <div class="comment-prompt" style="display:none;">
+                                    <i class="fa fa-spin fa-circle-o-notch"></i>
+                                    <span class="comment-prompt-text">评论正在提交中...请稍后</span>
+                                </div>
+                                <div class="comment-success" style="display:none;">
+                                    <i class="fa fa-check"></i>
+                                    <span class="comment-prompt-text">评论提交成功...</span>
+                                </div>
+                                <button type="submit" name="comment-submit" id="comment-submit" tabindex="4">发表</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            {% else %}
+            <h4 class="row text-center">需<a href="{% url 'userprofile:login' %}">登陆</a>后回复</h4>
+            <br>
+            {% endif %}
+            <h4>共有{{ commentList.count }}条评论</h4>
+            <div id="postcomments">
+                <ol id="comment_list" class="commentlist">
+                    {% for comment in commentList %}
+                    <li class="comment-content">
+                        <span class="comment-f">{{ forloop.counter }}</span>
+                        <div class="comment-main">
+                            <p>
+                                <a class="address" href="#" rel="nofollow">{{ comment.user.username }}</a>
+                                <span class="time">({{ comment.createdTime }})</span>
+                                <br>
+                                {{ comment.text }}
+                            </p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+    </div>
+    {% include 'article/aside.html' %}
+</section>
+{% endblock content %}

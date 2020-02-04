@@ -15,17 +15,16 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'aaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbcccccccccccccccdddddddddddddddd'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'article.apps.ArticleConfig',
+    'userprofile.apps.UserprofileConfig',
+    'password_reset',
+    'comment.apps.CommentConfig',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'QttNewsWebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,10 +79,10 @@ WSGI_APPLICATION = 'QttNewsWebsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '数据库名称', # 启动服务器前需要创建数据库 create database character set utf8mb4
-        'HOST': '127.0.0.1',
+        'NAME': 'QttNewsWebsite', # 启动服务器前需要创建数据库 create database character set utf8mb4
+        'HOST': '192.168.31.11',
         'USER': 'root',
-        'PASSWORD': '登陆数据库的密码',
+        'PASSWORD': '123456',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
@@ -118,8 +121,77 @@ USE_L10N = True
 
 USE_TZ = False
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+#网页源码路径指定用static这个访问静态文件
 STATIC_URL = '/static/'
+# 项目公共的静态文件目录
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+# 最后项目收集命令存放所有静态文件的根目录
+STATIC_ROOT = os.path.join(BASE_DIR, 'collectedStatic')
+
+MEDIA_URL = '/collectedMedia/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'collectedMedia')
+
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_HOST_USER = 'liang_liu99@163.com'
+EMAIL_HOST_PASSWORD = 'qttwy654987'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = '新闻速览<liang_liu99@163.com>'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'formatter': 'verbose',
+        },
+        'file': {
+            'level': 'WARNING',
+            # class': 'logging.FileHandler',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'when': 'midnight',
+            'backupCount': 30,
+            'filename': os.path.join(BASE_DIR, 'logs/debug.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['file', 'mail_admins'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+    }
+}

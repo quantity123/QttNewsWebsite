@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}新闻速览{% endblock title %}
+{% block content %}
+<section class="container">
+    <!--
+    <div id="focusslide" class="carousel slide" data-ride="carousel">
+        {% for topRecommendArticle in topRecommendArticleList %}
+        <ol class="carousel-indicators">
+            {% if forloop.first %}
+            <li data-target="#focusslide" data-slide-to="forloop.counter0" class="active"></li>
+            {% else %}
+            <li data-target="#focusslide" data-slide-to="forloop.counter0"></li>
+            {% endif %}
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            {% if forloop.first %}
+            <div class="item active">
+            {% else %}
+            <div class="item">
+            {% endif %}
+                <a href="{{ topRecommendArticle.get_absolute_url }}" title="{{ topRecommendArticle.title }}">
+                    <img src="{{ topRecommendArticle.iconograph.url }}" alt="{{ topRecommendArticle.title }}" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        {% empty %}
+        <ol class="carousel-indicators">
+            <li data-target="#focusslide" data-slide-to="0" class="active"></li>
+            <li data-target="#focusslide" data-slide-to="1" class=""></li>
+            <li data-target="#focusslide" data-slide-to="2" class=""></li>
+            <li data-target="#focusslide" data-slide-to="3" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="#" title="无置顶推荐新闻">
+                    <img src="{% static 'images/20200107073358489.jpg' %}" alt="无置顶推荐新闻" class="img-responsive">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" title="无置顶推荐新闻">
+                    <img src="{% static 'images/20200107073358489.jpg' %}" alt="无置顶推荐新闻" class="img-responsive">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" title="无置顶推荐新闻">
+                    <img src="{% static 'images/20200107073358489.jpg' %}" alt="无置顶推荐新闻" class="img-responsive">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" title="无置顶推荐新闻">
+                    <img src="{% static 'images/20200107073358489.jpg' %}" alt="无置顶推荐新闻" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+        <a class="left carousel-control" href="#focusslide" role="button" data-slide="prev" rel="nofollow">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">上一个</span>
+        </a>
+        <a class="right carousel-control" href="#focusslide" role="button" data-slide="next" rel="nofollow">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">下一个</span>
+        </a>
+    </div>
+    -->
+    {% if filterType == 0 %}
+    <article>
+        {% for topRecommendArticle in topRecommendArticleList %}
+        <a href="{{ topRecommendArticle.get_absolute_url }}" title="{{ topRecommendArticle.title }}">
+            <img class="topRecommend" data-original="{{ topRecommendArticle.iconograph.url }}" src="{{ topRecommendArticle.iconograph.url }}" alt="{{ topRecommendArticle.title }}" width="395", height="295"/>
+        </a>
+        {% empty %}
+        {% endfor %}
+    </article>
+    <br>
+    {% endif %}
+    <div class="content-wrap">
+        <div class="content">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    {% if filterType == 0 %}
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:home' %}">时间排序</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:home' %}?order=hot_order">热门排序</a>
+                    </li>
+                    {% elif filterType == 1 %}
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:searchArticleList' %}?searchText={{ searchText }}">时间排序</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:searchArticleList' %}?searchText={{ searchText }}&order=hot_order">热门排序</a>
+                    </li>
+                    {% elif filterType == 2 %}
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:categoryArticleList' category.pk %}">时间排序</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:categoryArticleList' category.pk %}?order=hot_order">热门排序</a>
+                    </li>
+                    {% elif filterType == 3 %}
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:tagArticleList' tag.pk %}">时间排序</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'article:tagArticleList' tag.pk %}?order=hot_order">热门排序</a>
+                    </li>
+                    {% endif %}
+                </ol>
+            </nav>
+            {% for article in articleList %}
+            <article class="excerpt excerpt-1">
+                {% if article.iconograph %}
+                <a class="focus" href="{{ article.get_absolute_url }}" title="{{ article.title }}">
+                    <img class="thumb" data-original="{{ article.iconograph.url }}" src="{{ article.iconograph.url }}" alt="新闻插图" style="display: inline;">
+                </a>
+                {% endif %}
+                <header>
+                    <h2>
+                        <a href="{{ article.get_absolute_url }}" title="{{ article.title }}"> {{ article.title }}</a>
+                    </h2>
+                </header>
+                <p class="meta">
+                    <span class="views" title="浏览数">
+                        <i class="glyphicon glyphicon-eye-open"></i> {{ article.viewCount }}
+                    </span>
+                    <a class="comment" href="##comment" title="评论数">
+                        <i class="glyphicon glyphicon-comment"></i> 4
+                    </a>
+                    <time class="time" title="首次发表时间">
+                        <i class="glyphicon glyphicon-time"></i> {{ article.createdTime }}
+                    </time>
+                    <time class="time" title="最后修改时间">
+                        <i class="glyphicon glyphicon-time"></i> {{ article.modifiedTime }}
+                    </time>
+                </p>
+                <p class="note">
+                    {{ article.body|slice:'100' }}...
+                </p>
+            </article>
+            {% empty %}
+                无新闻
+            {% endfor %}
+        </div>
+    </div>
+    {% include 'article/aside.html' %}
+</section>
+{% include 'article/pagination.html' %}
+{% endblock content %}

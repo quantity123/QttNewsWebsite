@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}关于{% endblock title %}
+{% block content %}
+<section class="container">
+	<article class="col-md-13">
+		<div class="entry-content clearfix panel panel-default" style="height:800px">
+			<article class="article-content">
+				<div class="page-header">
+					<img src="{% static 'images/about.jpg' %}" style="width:450px; height:450px">
+				</div>
+				<div class="media-body">
+					<p class="lead" style="">
+						介绍下,本人学习Python和Web服务端开发并且每天喜欢看新闻长长知识所以就用django框架制作了这个小新闻博客,并把看过的感兴趣的新闻
+						转发(能合法转发的)到此处与互联网有缘人一起观赏讨论,如果想与本人联系可以发电子邮箱283186660@qq.com,此网站源码也是开源在了本人github上面,
+						网址https://github.com/quantity123/QttNewsWebsite,有问题多多指教,谢谢!
+					</p>
+				</div>
+			</article>
+			<!--
+			<h2 class="title text-center">社交媒体</h2>
+			<ul class="social">
+				<li class="facebook"><a href="#"><span class="ion-social-facebook"></span></a></li>
+				<li class="twitter"><a href="#"><span class="ion-social-twitter"></span></a></li>
+				<li class="google-plus"><a href="#"><span class="ion-social-googleplus"></span></a></li>
+				<li class="tumblr"><a href="#"><span class="ion-social-tumblr"></span></a></li>
+			</ul>
+			-->
+		</div>
+	</article>
+</section>
+{% endblock content %}

@@ -1,0 +1,53 @@
+version: "3"
+
+services:
+  web:
+    restart: always
+    build: .  # '点'代表当前目录
+    command: bash -c "python3 manage.py collectstatic --no-input && python3 manage.py migrate && gunicorn -t 30 -w 4 -k gthread -b 0.0.0.0:8000 --chdir /QttNewsWebsite QttNewsWebsite.wsgi:application"
+    volumes:
+      - .:/QttNewsWebsite
+      - ./collectedStatic:/QttNewsWebsite/collectedStatic
+      - ./collectedMedia:/QttNewsWebsite/collectedMedia
+    ports:
+      - "8000:8000"
+    depends_on: # 让依赖的容器服务先启动
+      - db
+    networks:  # 让不同的容器服务网络互相隔离
+      - web_db_net
+      - web_nginx_net
+  db:
+    restart: always
+    image: mysql:5.7
+    volumes:  # 映射卷或者本地目录到容器服务里
+      - ./mysql_database:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=QttNewsWebsite
+    networks:
+      - web_db_net
+  nginx:
+    restart: always
+    image: nginx:latest
+    ports:
+      - "80:80"     # http端口
+      - "443:443"   # https端口
+    volumes:
+      - ./collectedStatic:/QttNewsWebsite/collectedStatic
+      - ./collectedMedia:/QttNewsWebsite/collectedMedia
+      - ./docker_nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./docker_nginx/conf.d:/etc/nginx/conf.d
+      - ./docker_nginx/logs:/var/log/nginx
+      - ./docker_nginx/html:/usr/share/nginx/html
+    depends_on:
+      - web
+    networks:
+      - web_nginx_net
+
+networks:
+  web_db_net:
+    driver: bridge
+  web_nginx_net:
+    driver: bridge
