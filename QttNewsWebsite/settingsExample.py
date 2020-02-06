@@ -138,7 +138,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'collectedMedia')
 
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_HOST_USER = 'liang_liu99@163.com'
-EMAIL_HOST_PASSWORD = 'qttwy654987'
+EMAIL_HOST_PASSWORD = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'
 EMAIL_PORT = 25
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = '新闻速览<liang_liu99@163.com>'
