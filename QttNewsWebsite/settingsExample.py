@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'QttNewsWebsite', # 启动服务器前需要创建数据库 create database character set utf8mb4
         'HOST': '192.168.31.11',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'xxxxxxxxxxxxxxxxxxx',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
